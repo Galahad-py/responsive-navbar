@@ -1,0 +1,222 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2C2A4A;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.profile-left p {
+    font-size: 11px;
+}
+
+.profile-left img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profile-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-right img {
+    width: 14px;
+    height: 14px;
+}
+
+/* dashboard-section */
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c8c8c9;
+}
+
+.dashboard, .view-site, .marketplace {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard img, .view-site img, .marketplace img {
+    width: 18px;
+    height: 18px;
+} 
+
+.view-site .go-to-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+}
+
+.dashboard:hover, .view-site:hover, .marketplace:hover {
+    background-color: #e5e5e5b4;
+}
+
+/* posts section */
+.posts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c8c8c9;
+}
+
+.posts img, .drafts img, .scheduled img, .published img {
+    width: 18px;
+    height: 18px;
+}
+
+.posts, .drafts, .scheduled, .published {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.posts:hover, .drafts:hover, .scheduled:hover, .published:hover {
+    background-color: #e5e5e5b4;
+}
+
+.plus-icon {
+    margin-left: auto;
+}
+
+.draft-number, .scheduled-number, .published-number {
+    margin-left: auto;
+    background-color: #c8c8c9;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 1px 4px;
+}
+
+/* pages-section */
+.pages-section {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c8c8c9;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.pages {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.pages:hover {
+    background-color: #e5e5e5b4;
+}
+
+.pages-img {
+    width: 18px;
+    height: 18px;
+}
+
+.pages-plus-icon {
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+}
+/* performance section */
+.performance-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.performance-section img {
+    width: 18px;
+    height: 18px;
+}
+.performance, .tags, .members, .design {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.performance:hover, .tags:hover, .members:hover, .design:hover {
+    background-color: #e5e5e5b4;
+}
+
+
+
