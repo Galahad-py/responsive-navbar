@@ -149,6 +149,10 @@
     transition: background-color 0.3s ease;
 }
 
+.drafts, .scheduled, .published {
+    margin-left: 25px;
+}
+
 .posts:hover, .drafts:hover, .scheduled:hover, .published:hover {
     background-color: #cdcdcd;
     transform: scale(1.05);
@@ -173,7 +177,7 @@
     flex-direction: column;
     position: absolute;
     top: 280px;
-    right: 210px;
+    right: 350px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 8px;
@@ -382,6 +386,7 @@
     width: 18px;
     height: 18px;
 }
+
 
 /* Tooltip styling */
 [data-tooltip] {
