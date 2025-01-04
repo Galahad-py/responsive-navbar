@@ -8,8 +8,61 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=alegreya-sans-sc:300,400,500|alumni-sans:200,300,400,500,600|fira-mono:400|poppins:100,200,300,400,500,600|roboto-condensed:300,400,500,600|roboto-mono:200,300,400,500" rel="stylesheet" />
+    <script src="/script.js" defer></script>
 </head>
 <body>
+    <div class="collapsedState">
+        <div class="profile-min">
+            <img src="/images/photo_2024-12-17_07-47-37.jpg" alt="profile-img">
+        </div>
+
+        <div class="dashboard-min">
+            <div class="dashboard-min-img" data-tooltip="Dashboard">
+                <img src="/black-icons/home-icon-black.svg" alt="home icon">
+            </div>
+
+            <div class="dashboard-min-img" data-tooltip="View Site">
+                <img src="/black-icons/computersite-icon.svg" alt="view site icon">
+            </div>
+            
+            <div class="dashboard-min-img" data-tooltip="Marketplace">
+                <img src="/black-icons/marketplaceshop-icon.svg" alt="Marketplace icon">
+            </div>
+        </div>
+
+        <div class="post-min">
+            <div class="post-min-img" data-tooltip="Posts">
+                <img src="/black-icons/pen-post-write-icon.svg" alt="posts icon">
+            </div>
+            
+        </div>
+
+        <div class="pages-min">
+            <div class="pages-min-img" data-tooltip="Pages">
+                <img src="/black-icons/pages-icon.svg" alt="pages-section" class="pages-img">
+            </div>
+            
+        </div>
+
+        <div class="performance-min">
+            <div class="performance-min-img" data-tooltip="Performance">
+                <img src="/black-icons/performance-icon.svg" alt="performance icon">
+            </div>
+            
+            <div class="performance-min-img" data-tooltip="Tags">
+                <img src="/black-icons/tags-icons.svg" alt="tags icon">
+            </div>
+            <div class="performance-min-img" data-tooltip="Members">
+                <img src="/black-icons/members-team-icon.svg" alt="members icon">
+            </div>
+
+            <div class="performance-min-img" data-tooltip="Design">
+                <img src="/black-icons/color-pallete-design-icon.svg" alt="design icon">
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="profile">
             <div class="profile-left">
@@ -41,10 +94,22 @@
         </div>
 
         <div class="posts-section">
-            <div class="posts">
+            <div class="posts" id="postButton">
                 <img src="/black-icons/pen-post-write-icon.svg" alt="posts icon">
-                <p>Posts</p>
-                <img src="/black-icons/plus-icon.svg" alt="plus-icon" class="plus-icon">
+                <span>Posts</span>
+                <span class="plus-icon"><img src="/black-icons/plus-icon.svg" alt=""></span>
+            </div>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="menu-item">
+                    <img src="/black-icons/plus-icon.svg" alt="">
+                    Create Post</div>
+                <div class="menu-item">
+                    <img src="/black-icons/plus-icon.svg" alt="">
+                    Create Folder</div>
+                <div class="menu-item">
+                    <img src="/black-icons/plus-icon.svg" alt="">
+                    Create Project</div>
             </div>
 
             <div class="drafts">
